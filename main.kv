@@ -1,0 +1,29 @@
+<MainWidget>:
+    orientation: 'vertical'
+
+    Label:        
+        id: lbl_question
+        text: 'Флаг какой страны изображен на рисунке?'
+
+    AsyncImage:
+        id: img_question
+    
+    GridLayout:
+        id: layout_btns
+        rows:2
+
+        Button:
+            id: btn_answer1
+            on_press: root.btn_pressed(1)
+        
+        Button:
+            id: btn_answer2
+            on_press: root.btn_pressed(2)
+        
+        Button:
+            id: btn_answer3
+            on_press: root.btn_pressed(3)
+        
+        Button:
+            id: btn_answer4
+            on_press: root.btn_pressed(4)
